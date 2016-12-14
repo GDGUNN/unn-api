@@ -15,6 +15,6 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->post('/v1/students', 'App\Http\Controllers\ApiController@getStudentDetails');
+$app->post('/v1/students', 'ApiController@getStudentDetails');
 
-$app->get('/v1/students', 'App\Http\Controllers\ApiController@getStudentDetails');
+$app->get('/v1/students', 'ApiController@getStudentDetails');
