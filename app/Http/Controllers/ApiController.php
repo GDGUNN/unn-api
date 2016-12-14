@@ -74,9 +74,7 @@ class ApiController extends Controller
             'login' => 'Login');
         curl_setopt($ch, CURLOPT_AUTOREFERER, true);
         curl_setopt($ch, CURLOPT_HEADER, false);
-        curl_setopt($ch, CURLOPT_VERBOSE, true);
-        curl_setopt($ch, CURLOPT_STDERR, $f);
-        curl_setopt($ch, CURLOPT_URL, $loginUrl);
+       curl_setopt($ch, CURLOPT_URL, $loginUrl);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postfields));
         $resultOfLogin = curl_exec($ch);
