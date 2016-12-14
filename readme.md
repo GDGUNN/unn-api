@@ -4,7 +4,7 @@ An unoficial API for the University of Nigeria
 
 ## Endpoints
 
-API URL: `https://unn-api.herokuapp.com`
+API URL: `https://unn-api.herokuapp.com/v1`
 
 ### POST `/students`: authenticate or obtain a students details
 
