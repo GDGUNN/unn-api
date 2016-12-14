@@ -105,8 +105,13 @@ class ApiController extends Controller
     {
         $data = [];
         $dom = new \domDocument;
+
+        $internalErrors = libxml_use_internal_errors(true);
+
         $dom->loadHTML($profile);
         $dom->preserveWhiteSpace = false;
+
+        libxml_use_internal_errors($internalErrors);
 
         $sex = $dom->getElementById("ctl00_ContentPlaceHolder1_ddlSex");
         $sexValue = $this->domExtractSelectedValue($sex->getElementsByTagName('option'));
