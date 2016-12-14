@@ -15,15 +15,15 @@ API URL: `https://unn-api.herokuapp.com/v1`
 
 #### Response format
 
-Successful request:
+Successful request (note the capitalization):
 ````
 {
 "status": "ok",
 "message": "",
 "student": {
-    "surname": "Adebayo",
-    "first_name": "Shalvah",
-    "middle_name": "Joshua",
+    "surname": "ADEBAYO",
+    "first_name": "SHALVAH",
+    "middle_name": "JOSHUA",
     "sex": "Male",
     "mobile": "080xxxxxxxx",
     "email": "FIRSTNAME.LASTNAME.REGNO@UNN>EDU>NG",
