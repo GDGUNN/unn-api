@@ -31,7 +31,7 @@ class ApiController extends Controller
         $password = $request->input("password");
         $result = $this->login($username, $password);
 
-        if ($result !== false) {
+        if ($result === false) {
             $response = array("status" => "failed",
                 "message" => "authentication failed: incorrect username or password");
         } else {
