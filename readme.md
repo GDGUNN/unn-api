@@ -19,30 +19,30 @@ password`: The student s UNNportal.unn.edu.ng username
 Successful request (note the capitalization):
 ````
 {
-"status": "ok",
-"message": "",
-"student": {
-    "surname": "ADEBAYO",
-    "first_name": "SHALVAH",
-    "middle_name": "JOSHUA",
-    "sex": "Male",
-    "mobile": "080xxxxxxxx",
-    "email": "FIRSTNAME.LASTNAME.REGNO@UNN>EDU>NG",
-    "department": "ELECTRONIC ENGINEERING",
-    "level": "200 LEVEL",
-    "entry_year": "2010-2011",
-    "grad_year": "2019-2020",
-    "matric_no": "201x/xxxxxx",
-    "jamb_no": "xxxxxxxxxx"
-}
+  "status": "ok",
+  "message": "",
+  "student": {
+      "surname": "ADEBAYO",
+      "first_name": "SHALVAH",
+      "middle_name": "JOSHUA",
+      "sex": "Male",
+      "mobile": "080xxxxxxxx",
+      "email": "FIRSTNAME.LASTNAME.REGNO@UNN.EDU.NG",
+      "department": "ELECTRONIC ENGINEERING",
+      "level": "200 LEVEL",
+      "entry_year": "2010-2011",
+      "grad_year": "2019-2020",
+      "matric_no": "201x/xxxxxx",
+      "jamb_no": "xxxxxxxxxx"
+  }
 }
 ```
 
 Unsuccessful request:
 ```
 {
-"status": "ok",
-"message": "error_message"
+  "status": "ok",
+  "message": "error_message"
 }
 ```
 
