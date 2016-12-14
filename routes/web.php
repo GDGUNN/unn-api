@@ -15,4 +15,4 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->any('/students', 'App\Http\Controllers\ApiController@getStudentDetails');
+$app->any('/v1/students', 'App\Http\Controllers\ApiController@getStudentDetails');
