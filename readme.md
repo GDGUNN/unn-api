@@ -9,9 +9,10 @@ API URL: `https://unn-api.herokuapp.com/v1`
 ### POST `/students`: authenticate or obtain a students details
 
 #### Required parameters
-```'
- `username`: The student s UNNportal.unn.edu.ng username
- `password`: The student s UNNportal.unn.edu.ng username
+```
+username`: The student s UNNportal.unn.edu.ng username
+password`: The student s UNNportal.unn.edu.ng username
+```
 
 #### Response format
 
