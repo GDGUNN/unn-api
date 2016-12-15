@@ -69,14 +69,14 @@ Here's a very simple sample for beginner-level web developers
 
 	$result = json_decode(curl_exec($ch), true);
 
-/*
-At this point, your `$result` will be an array. You can check if there was an error by checking `$result['status']`. If the `status` is `ok`, you can then check `$result[`student`]`, an array of the students details. For example, `$result['student']['department']`. 
+    /*
+    At this point, your `$result` will be an array. You can check if there was an error by checking `$result['status']`. If the `status` is `ok`, you can then check `$result[`student`]`, an array of the students details. For example, `$result['student']['department']`.
 
-Do whatever you wish with the students details eg store them in a database. 
-*/
+    Do whatever you wish with the students details eg store them in a database.
+    */
 
-//redirect your user to another page if you wish
-header("Location: /home");
+    //redirect your user to another page if you wish
+    header("Location: /home");
 ```
 
 Thank you!
