@@ -39,10 +39,13 @@ class ApiController extends Controller
             $response = array("status" => "ok",
                 "message" => "");
             $response["student"] = $this->extractDetails($result);
-            } catch (\Exception $e | \Error $err) {
+            } catch (\Exception $e) {
                 $response = array("status" => "failed",
                 "message" => "authentication failed: incorrect username or password");
-            }
+            } catch (\Error $e) {
+                $response = array("status" => "failed",
+                "message" => "authentication failed: incorrect username or password");
+            } 
         }
 
         return json_encode($response);
