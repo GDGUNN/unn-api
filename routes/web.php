@@ -16,5 +16,3 @@ $app->get('/', function () use ($app) {
 });
 
 $app->post('/v1/students', 'ApiController@getStudentDetails');
-
-$app->get('/v1/students', 'ApiController@getStudentDetails');
