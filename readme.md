@@ -1,8 +1,6 @@
-# unn-api
-[![Latest Stable Version](https://poser.pugx.org/shalvah/unnportal-api/v/stable)](https://packagist.org/packages/shalvah/unnportal-api) [![Total Downloads](https://poser.pugx.org/shalvah/unnportal-api/downloads)](https://packagist.org/packages/shalvah/unnportal-api) [![License](https://poser.pugx.org/shalvah/unnportal-api/license)](https://packagist.org/packages/shalvah/unnportal-api) 
-  
-<img align="center" alt="UNN logo" src ="http://www.unn.edu.ng/wp-content/uploads/2015/03/UNN_Logo.jpg" />
-
+<p align="center"><img  alt="UNN logo" src ="http://www.unn.edu.ng/wp-content/uploads/2015/03/UNN_Logo.jpg" />
+<br><h1>The UNN API</h1></p>
+ 
 An unoficial API for the [University of Nigeria student portal](http://unnportal.unn.edu.ng)
 
 ## Endpoints
