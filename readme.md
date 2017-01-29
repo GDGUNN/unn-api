@@ -55,7 +55,7 @@ Possible values of `error_message`:
 If you discover any bugs or security vulnerabilities, please contact me at shalvah.adebayo@gmail.com.
 
 ## Packages
-If you are building a PHP app, you could use [this package](https://github.com/shalvah/), which gives you your results directly.
+If you are building a PHP app, you could use [this package](https://github.com/shalvah/), which gives you your results directly. Saves you the hassle o cURL or Guzzle.
 
 ## Contribution
 If you would like to help improve this API, first of all, let me say thanks! All you need to do:
