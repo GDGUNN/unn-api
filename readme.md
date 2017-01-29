@@ -1,7 +1,7 @@
 <p align="center"><img  alt="UNN logo" src ="http://www.unn.edu.ng/wp-content/uploads/2015/03/UNN_Logo.jpg" />
-<br><h1>The UNN API</h1></p>
+<br><h1 align="center">The UNN API</h1></p>
  
-An unoficial API for the [University of Nigeria student portal](http://unnportal.unn.edu.ng)
+ <p align="center">An unoficial API for the <a href="http://unnportal.unn.edu.ng">University of Nigeria student portal</a></p>
 
 ## Endpoints
 
