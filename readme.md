@@ -52,7 +52,7 @@ Possible values of `error_message`:
 - `missing password`
 
 ## Bugs or security vulnerabilities
-If you discover any bugs or security vulnerabilities, please contact me at shalvah.adebayo@gmail.com.
+If you discover any bugs or security vulnerabilities, please contact me at shalvah.adebayo@gmail.com or open an issue.
 
 ## Packages
 If you are building a PHP app, you could use [this package](https://github.com/shalvah/unnportal-php), which gives you your results directly. Saves you the hassle o cURL or Guzzle.
