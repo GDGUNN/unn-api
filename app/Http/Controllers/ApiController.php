@@ -30,15 +30,11 @@ class ApiController extends Controller
         $username = $request->input("username");
         $password = $request->input("password");
 
-        try {
+
             $result = $this->login($username, $password);
                 $response = array("status" => "ok",
                     "message" => "success");
                 $response["student"] = $this->extractDetails($result);
-        } catch (\Symfony\Component\Debug\Exception\FatalThrowableError $e) {
-            $response = array("status" => "failed",
-                "message" => "authentication failed: incorrect username or password");
-        }
 
         return json_encode($response);
     }
