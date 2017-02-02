@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Symfony\Component\Debug\Exception\FatalThrowableError;
 
 class ApiController extends Controller
 {
@@ -24,30 +25,24 @@ class ApiController extends Controller
 
         if (!($request->has("password"))) {
             return json_encode(array("status" => "failed",
-            "message" => "missing password"));
+                "message" => "missing password"));
         }
 
         $username = $request->input("username");
         $password = $request->input("password");
-try {
-        $result = $this->login($username, $password);
-} catch (\Exception $e) {
+        try {
+            $result = $this->login($username, $password);
+            if ($result === false) {
                 $response = array("status" => "failed",
-                "message" => "authentication failed: incorrect username or password");
+                    "message" => "authentication failed: incorrect username or password");
+            } else {
+                $response = array("status" => "ok",
+                    "message" => "");
+                $response["student"] = $this->extractDetails($result);
             }
-
-        if ($result === false) {
+        } catch (FatalThrowableError $e) {
             $response = array("status" => "failed",
                 "message" => "authentication failed: incorrect username or password");
-        } else {
-            try {
-            $response = array("status" => "ok",
-                "message" => "");
-            $response["student"] = $this->extractDetails($result);
-            } catch (\Exception $e) {
-                $response = array("status" => "failed",
-                "message" => "authentication failed: incorrect username or password");
-            }
         }
 
         return json_encode($response);
