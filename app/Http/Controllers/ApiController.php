@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Symfony\Component\Debug\Exception\FatalThrowableError;
 
 class ApiController extends Controller
 {
@@ -36,7 +35,7 @@ class ApiController extends Controller
                 $response = array("status" => "ok",
                     "message" => "success");
                 $response["student"] = $this->extractDetails($result);
-        } catch (FatalThrowableError $e) {
+        } catch (\Symfony\Component\Debug\Exception\FatalThrowableError $e) {
             $response = array("status" => "failed",
                 "message" => "authentication failed: incorrect username or password");
         }
