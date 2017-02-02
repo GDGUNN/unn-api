@@ -29,7 +29,12 @@ class ApiController extends Controller
 
         $username = $request->input("username");
         $password = $request->input("password");
+try {
         $result = $this->login($username, $password);
+} catch (\Exception $e) {
+                $response = array("status" => "failed",
+                "message" => "authentication failed: incorrect username or password");
+            }
 
         if ($result === false) {
             $response = array("status" => "failed",
