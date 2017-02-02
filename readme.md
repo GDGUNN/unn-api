@@ -21,7 +21,7 @@ Successful request (note the capitalization):
 ````
 {
   "status": "ok",
-  "message": "",
+  "message": "message",
   "student": {
       "surname": "ADEBAYO",
       "first_name": "SHALVAH",

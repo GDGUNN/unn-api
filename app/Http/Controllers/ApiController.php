@@ -37,7 +37,7 @@ class ApiController extends Controller
                     "message" => "authentication failed: incorrect username or password");
             } else {
                 $response = array("status" => "ok",
-                    "message" => "");
+                    "message" => "success");
                 $response["student"] = $this->extractDetails($result);
             }
         } catch (FatalThrowableError $e) {
