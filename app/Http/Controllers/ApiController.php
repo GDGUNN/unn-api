@@ -30,16 +30,12 @@ class ApiController extends Controller
 
         $username = $request->input("username");
         $password = $request->input("password");
+
         try {
             $result = $this->login($username, $password);
-            if ($result === false) {
-                $response = array("status" => "failed",
-                    "message" => "authentication failed: incorrect username or password");
-            } else {
                 $response = array("status" => "ok",
                     "message" => "success");
                 $response["student"] = $this->extractDetails($result);
-            }
         } catch (FatalThrowableError $e) {
             $response = array("status" => "failed",
                 "message" => "authentication failed: incorrect username or password");
@@ -109,7 +105,7 @@ class ApiController extends Controller
     function extractDetails($profile)
     {
         $data = [];
-        $dom = new \domDocument;
+        $dom = new \DomDocument;
 
         $internalErrors = libxml_use_internal_errors(true);
 
