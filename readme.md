@@ -7,7 +7,7 @@
 
 API URL: `https://unn-api.herokuapp.com/v1`
 
-### POST `/students`: obtain a students details
+### POST `/students`: authenticate or obtain a student's details
 
 #### Required parameters
 ```
@@ -21,7 +21,7 @@ Successful request (note the capitalization):
 ````
 {
   "status": "ok",
-  "message": "message",
+  "message": "success",
   "student": {
       "surname": "ADEBAYO",
       "first_name": "SHALVAH",
